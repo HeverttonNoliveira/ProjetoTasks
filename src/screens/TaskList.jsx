@@ -4,6 +4,7 @@ import todayImage from '../../assets/imgs/today.jpg'
 import moment from "moment"
 import 'moment/locale/pt-br'
 import commonStyles from "../commonStyles"
+import Task from "../components/Task"
 
 export default props => {
     const today = moment().locale('pt-br').format('ddd, D [de] MMMM')
@@ -19,6 +20,10 @@ export default props => {
 
             <View style={style.tasklist}>
                 <Text>Text List</Text>
+            </View>
+
+            <View>
+                <Task/>
             </View>
         </SafeAreaView>
     )
